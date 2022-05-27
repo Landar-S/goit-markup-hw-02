@@ -1,16 +1,83 @@
-.site-nav .link {
-  color: #212121;
+:root {
+  --accent-color: #2196f3;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --hover-main-btn: #188ce8;
+  --secondery-bg-color: #f5f4fa;
+  --address-footer-color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+/* ------Header----- */
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+.logo-header {
+  color: #000000;
+}
+
+.logo-footer {
+  color: #ffffff;
+}
+
+.site-nav .link,
+.adrress-header .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-tex-color);
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .site-nav .link.current {
-  color: #2196f3;
+  color: var(--accent-color);
+}
+
+.adrress-header .link {
+  color: var(--secondary-text-color);
+}
+
+.adrress-header .link:hover,
+.adrress-header .link:focus {
+  color: var(--accent-color);
+}
+
+.main-btn {
+  cursor: pointer;
 }
 
 .visually-hidden {
-  visibility: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
