@@ -3,11 +3,13 @@
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
   --address-footer-color: rgba(255, 255, 255, 0.6);
+  --title-bg-color: #ffffff;
 }
 
 body {
   font-family: Roboto, sans-serif;
   color: var(--primary-text-color);
+  background-color: var(--title-bg-color);
 }
 
 .link {
@@ -85,7 +87,7 @@ body {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--title-bg-color);
 }
 
 .hero-btn {
@@ -95,8 +97,9 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--title-bg-color);
   background-color: var(--accent-color);
+  border-radius: 4px;
 }
 
 .hero-btn:hover,
@@ -140,6 +143,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+.team-item {
+  background-color: var(--title-bg-color);
+}
+
 .team-name {
   font-weight: 500;
   font-size: 16px;
@@ -157,7 +164,7 @@ body {
 /* -------footer------ */
 
 .logo-footer {
-  color: #ffffff;
+  color: var(--title-bg-color);
 }
 
 .footer {
@@ -172,7 +179,7 @@ body {
   font-size: 14px;
   line-height: 1.71x;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--title-bg-color);
 }
 
 .footer-contacts {
@@ -188,6 +195,17 @@ body {
 }
 
 /* ------portfolio------- */
+
+.current-btn {
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--title-bg-color);
+  background-color: var(--accent-color);
+}
 
 .filter-btn {
   font-family: inherit;
